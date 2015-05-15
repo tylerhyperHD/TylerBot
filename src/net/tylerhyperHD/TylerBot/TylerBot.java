@@ -16,7 +16,7 @@ public class TylerBot extends BukkitPlugin {
     public TylerBot plugin;
     public Logger logger;
     public BukkitCommandHandler handler;
-    public static final String BOT_MSG_CHAT_TAG = ChatColor.GOLD + "[" + ChatColor.RED + "TylerBotHD " + ChatColor.GOLD + "-> me]";
+    public static final String BOT_MSG_CHAT_TAG = ChatColor.GOLD + "[" + ChatColor.RED + "TylerBotHD " + ChatColor.GOLD + "-> me]" + ChatColor.WHITE + " ";
     public static final String BOT_CHAT_TAG = ChatColor.WHITE + "<" + ChatColor.DARK_GRAY + "[" + ChatColor.BLUE + "Bot" + ChatColor.DARK_GRAY + "]" + ChatColor.RED + "tylerbotHD" + ChatColor.WHITE +">";
     public static Server server;
     
