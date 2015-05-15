@@ -1,10 +1,10 @@
-package net.pravian.bukkitlib.command;
+package net.tylerhyperHD.TylerBot.Commands;
 
 import java.util.HashMap;
 import java.util.Map;
 import net.pravian.bukkitlib.InternalExceptionHandler;
-import net.pravian.bukkitlib.implementation.BukkitLogger;
 import net.pravian.bukkitlib.util.LoggerUtils;
+import net.tylerhyperHD.TylerBot.TB_Log;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -18,7 +18,7 @@ import org.bukkit.plugin.Plugin;
 public class BukkitCommandHandler<T extends Plugin> {
 
     private final T plugin;
-    private final BukkitLogger logger;
+    private final TB_Log logger;
     private final Map<String, BukkitCommand<T>> commandCache;
     private boolean commandCaching;
     private String superPermission;
@@ -35,7 +35,7 @@ public class BukkitCommandHandler<T extends Plugin> {
      * @param plugin The plugin instance.
      */
     public BukkitCommandHandler(T plugin) {
-        this(plugin, new BukkitLogger(plugin));
+        this(plugin, new TB_Log(plugin));
     }
 
     /**
@@ -44,7 +44,7 @@ public class BukkitCommandHandler<T extends Plugin> {
      * @param plugin The plugin instance.
      * @param logger The logger to send error messages to.
      */
-    public BukkitCommandHandler(T plugin, BukkitLogger logger) {
+    public BukkitCommandHandler(T plugin, TB_Log logger) {
         this.plugin = plugin;
         this.logger = logger;
         this.commandCache = new HashMap<String, BukkitCommand<T>>();
@@ -212,7 +212,7 @@ public class BukkitCommandHandler<T extends Plugin> {
      *
      * @return The Logger.
      */
-    public BukkitLogger getLogger() {
+    public TB_Log getLogger() {
         return logger;
     }
 

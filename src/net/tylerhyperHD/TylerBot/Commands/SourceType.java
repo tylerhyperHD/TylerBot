@@ -1,4 +1,4 @@
-package net.pravian.bukkitlib.command;
+package net.tylerhyperHD.TylerBot.Commands;
 
 /**
  * Represents the different sources a command execution might originate from.

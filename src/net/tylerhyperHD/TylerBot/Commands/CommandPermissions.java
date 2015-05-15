@@ -1,4 +1,4 @@
-package net.pravian.bukkitlib.command;
+package net.tylerhyperHD.TylerBot.Commands;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

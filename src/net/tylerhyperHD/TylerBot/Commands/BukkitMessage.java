@@ -1,4 +1,4 @@
-package net.pravian.bukkitlib.command;
+package net.tylerhyperHD.TylerBot.Commands;
 
 /**
  * Represents an interface from which messages may be retrieved

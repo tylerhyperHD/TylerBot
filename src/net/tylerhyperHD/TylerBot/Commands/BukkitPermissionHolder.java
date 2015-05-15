@@ -1,4 +1,4 @@
-package net.pravian.bukkitlib.command;
+package net.tylerhyperHD.TylerBot.Commands;
 
 import java.util.HashMap;
 import java.util.HashSet;

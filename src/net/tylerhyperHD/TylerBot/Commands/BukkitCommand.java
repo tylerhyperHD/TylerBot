@@ -1,8 +1,8 @@
-package net.pravian.bukkitlib.command;
+package net.tylerhyperHD.TylerBot.Commands;
 
 import java.util.Set;
-import net.pravian.bukkitlib.implementation.BukkitLogger;
 import net.pravian.bukkitlib.util.PlayerUtils;
+import net.tylerhyperHD.TylerBot.TB_Log;
 import org.bukkit.ChatColor;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.Server;
@@ -35,7 +35,7 @@ public abstract class BukkitCommand<T extends Plugin> {
     /**
      * Represents the PLuginLogger used.
      */
-    protected BukkitLogger logger;
+    protected TB_Log logger;
     //
     private BukkitCommandHandler<?> handler;
     private CommandSender commandSender;
@@ -70,7 +70,7 @@ public abstract class BukkitCommand<T extends Plugin> {
     protected void setup(
             final BukkitCommandHandler<?> handler,
             final T plugin,
-            final BukkitLogger logger,
+            final TB_Log logger,
             final CommandSender sender,
             final Command command,
             final String commandLabel,

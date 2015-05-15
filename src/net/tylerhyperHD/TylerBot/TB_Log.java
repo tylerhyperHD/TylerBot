@@ -1,4 +1,4 @@
-package net.pravian.bukkitlib.implementation;
+package net.tylerhyperHD.TylerBot;
 
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
@@ -9,7 +9,7 @@ import org.bukkit.plugin.Plugin;
 /*
  * Represents a Plugin-specific Logger . <p><b>Note</b>: The methods in this class also accept all instances of {@link java.lang.Throwable} and will print the attached StackTrace.
  */
-public class BukkitLogger extends Logger {
+public class TB_Log extends Logger {
 
     private String pluginName;
     private boolean debugMode;
@@ -25,11 +25,11 @@ public class BukkitLogger extends Logger {
      *
      * @param plugin The plugin for which the logger will be used.
      */
-    public BukkitLogger(Plugin plugin) {
+    public TB_Log(Plugin plugin) {
         this(plugin, plugin.getServer().getLogger());
     }
 
-    public BukkitLogger(Plugin plugin, Logger raw) {
+    public TB_Log(Plugin plugin, Logger raw) {
         super(plugin.getClass().getCanonicalName(), null);
         String prefix = plugin.getDescription().getPrefix();
         pluginName = prefix != null ? new StringBuilder().append("[").append(prefix).append("] ").toString() : "[" + plugin.getDescription().getName() + "] ";
