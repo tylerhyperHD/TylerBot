@@ -1,3 +1,7 @@
 name: TylerBot
 main: net.tylerhyperHD.TylerBot.TylerBot
-version: 1.0
+version: 1.5
+commands:
+    tylerbot:
+        description: The main command of TylerBot.
+        usage: /<command>
